@@ -1,0 +1,16 @@
+.dropdown-title{
+    display:flex;
+    justify-content: space-between;
+    background-color:#FF6060 ;
+    border-radius: 5px;
+    padding-left:10px;
+    padding-right:5px;
+    
+}
+
+.dropdown-title >h3 {
+    color:white;
+    font-size: 0.7em;
+    font-weight: 500;
+   
+}
