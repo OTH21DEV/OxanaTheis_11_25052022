@@ -11,12 +11,12 @@ function Dropdown(props) {
       dropdownTexte.classList.add("dropdown-texte--onclick");
       arrow.setAttribute("data-open", "true");
       arrow.classList.add("dropdown-arrow_down--onclick");
-      container.classList.add("test--onclick");
+      container.classList.add("dropdown-container--onclick");
     } else {
       dropdownTexte.classList.remove("dropdown-texte--onclick");
       arrow.setAttribute("data-open", "false");
       arrow.classList.remove("dropdown-arrow_down--onclick");
-      container.classList.remove("test--onclick");
+      container.classList.remove("dropdown-container--onclick");
     }
   }
   return (
@@ -24,9 +24,7 @@ function Dropdown(props) {
       <div className={props.container}>
         <h3 className="dropdown-title">{props.title}</h3>
         <img src={arrow_down} alt="Arrow down" className="dropdown-arrow_down" data-open="false" onClick={handleClick} />
-
         <p className="dropdown-texte">{props.content}</p>
-        
       </div>
     </div>
   );

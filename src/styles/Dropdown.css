@@ -1,16 +1,17 @@
-.dropdown, .test, .test2, .test3, .test4 {
+.dropdown-reliability,
+.dropdown-respect,
+.dropdown-service,
+.dropdown-security {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #ff6060;
   border-radius: 5px;
   max-height: 40px;
-  margin-bottom :15px;
-
-
+  margin-bottom: 15px;
 }
-.test--onclick{
-  max-height:175px;
+.dropdown-container--onclick {
+  max-height: 190px;
 }
 .dropdown-title {
   color: white;
@@ -25,23 +26,22 @@
   border-radius: 0px 0px 5px 5px;
   max-height: 150px;
   margin: 0;
-  padding: 15px 0px 40px 10px;
+  padding: 15px 10px 40px 10px;
   margin-top: -0.5px;
   color: #ff6060;
   font-weight: 400;
   visibility: hidden;
-  width:100%;
- 
+  width: 100%;
+  text-align: justify;
 }
-.dropdown-texte--onclick{
-    visibility: visible;
-   
+.dropdown-texte--onclick {
+  visibility: visible;
 }
-.dropdown-arrow_down{
+.dropdown-arrow_down {
   padding-right: 5px;
 }
 
-.dropdown-arrow_down--onclick{
-    transform: rotate(180deg);
-    padding-left: 5px;
+.dropdown-arrow_down--onclick {
+  transform: rotate(180deg);
+  padding-left: 5px;
 }

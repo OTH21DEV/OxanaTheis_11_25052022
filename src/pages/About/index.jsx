@@ -13,10 +13,10 @@ function About() {
     <div>
       <Header></Header>
       <img src={img} alt="Mountain" className="img" />
-      <Dropdown title ="Fiabilité" container ="test" content = {firstDropdown}></Dropdown>
-      <Dropdown title ="Respect" container ="test2" content = {secondDropdown}></Dropdown>
-      <Dropdown title ="Service"container ="test3" content = {thirdDropdown}></Dropdown>
-      <Dropdown title ="Sécurité"container ="test4" content = {forthDropdown}></Dropdown>
+      <Dropdown title ="Fiabilité" container ="dropdown-reliability" content = {firstDropdown}></Dropdown>
+      <Dropdown title ="Respect" container ="dropdown-respect" content = {secondDropdown}></Dropdown>
+      <Dropdown title ="Service"container ="dropdown-service" content = {thirdDropdown}></Dropdown>
+      <Dropdown title ="Sécurité"container ="dropdown-security" content = {forthDropdown}></Dropdown>
       <Footer></Footer>
     </div>
   );
