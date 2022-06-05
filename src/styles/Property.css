@@ -1,0 +1,17 @@
+.property__img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.property {
+  position: relative;
+}
+.property__title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}

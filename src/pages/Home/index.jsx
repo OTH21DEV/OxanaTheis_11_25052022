@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+//import React, { useEffect,useState} from "react";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Property from "../../components/Property";
@@ -6,37 +6,34 @@ import Property from "../../components/Property";
 
 function Home() {
   //? ou mettre .json -dossier public , ne fonctionnait pas dans src?
-
+/*
   const linkToJson = "data/logements.json";
-  /*
-  const [test, setTest] = useState({})
-  setTest(data)
-  console.log(setTest(data))*/
+  
+  const [data, setData] = useState({})
+ 
 
-
- // useEffect(() => {
+  
+  useEffect(() => {
     fetch(linkToJson)
-      .then(function (response) {
-        if (response.ok) {
-          return response.json();
-        }
-      })
-      .then(function (data) {
-        console.log(data);
-
-        for (let property of data) {
-          console.log(property);
-
-        }
+    .then(function (response) {
+      if (response.ok) {
+        return response.json();
+      }
+    })
+    .then(function (data) {
+      console.log(data[0].title);
       
-
-      })
-
-      .catch(function (error) {
-        console.log(error);
-      });
-  //}, []);
-
+      
+      
+      
+    })
+    
+    .catch(function (error) {
+      console.log(error);
+    });
+  }, []);
+  console.log(setData(data))
+*/
   return (
     <div className="App">
       <Header></Header>
