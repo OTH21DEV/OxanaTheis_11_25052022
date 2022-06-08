@@ -1,8 +1,21 @@
 import "../../styles/Property.css";
-import Footer from "../../components/Footer";
-import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+
+import { PropertiesContext } from "../useContext/propertiesContext";
+import React, { useContext} from "react";
+
 
 function Property() {
+  //test de useContext
+
+  const [properties,setProperties] = useContext(PropertiesContext)
+
+
+//............................
+//test appel de useEffect ici 
+  /*
+  
   const linkToJson = "data/logements.json";
 
   const [properties, setProperties] = useState([]);
@@ -18,15 +31,36 @@ function Property() {
     }
     fetchData();
   }, []);
+
+
   return (
     <div>
       {properties.map((property, index) => (
         <div className="property">
-          <img className="property__img" src={property.cover} key={index} alt="" />
+          <Link to={`/property/${property.id}`}>
+            <img className="property__img" src={property.cover} key={index} alt="" />
+          </Link>
+
           <h3 className="property__title">{property.title}</h3>
         </div>
       ))}
-<Footer></Footer>
+    
+    </div>
+  );
+
+  */
+
+  return (
+    <div>
+      {properties.map((property) => (
+        <div className="property">
+          <Link to={`/property/${property.id}`}>
+            <img className="property__img" src={property.cover} key={property.id} alt="" />
+          </Link>
+
+          <h3 className="property__title">{property.title}</h3>
+        </div>
+      ))}
     </div>
   );
 }

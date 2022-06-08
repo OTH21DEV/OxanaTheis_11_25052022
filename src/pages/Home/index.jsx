@@ -2,44 +2,49 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Property from "../../components/Property";
-//import Footer from "../../components/Footer";
+//import allProperties from "../../components/useContext/propertiesArray";
+
+//
+import Footer from "../../components/Footer";
+//import React, { useEffect, useState } from "react";
+
+//test
+import { PropertiesProvider } from "../../components/useContext/propertiesContext";
 
 function Home() {
-  //? ou mettre .json -dossier public , ne fonctionnait pas dans src?
-/*
-  const linkToJson = "data/logements.json";
-  
-  const [data, setData] = useState({})
- 
+  /*
+ const linkToJson = "data/logements.json";
 
-  
-  useEffect(() => {
-    fetch(linkToJson)
-    .then(function (response) {
-      if (response.ok) {
-        return response.json();
-      }
-    })
-    .then(function (data) {
-      console.log(data[0].title);
-      
-      
-      
-      
-    })
-    
-    .catch(function (error) {
-      console.log(error);
-    });
-  }, []);
-  console.log(setData(data))
+ const [properties, setProperties] = useState([]);
+
+useEffect(() => {
+  async function fetchData() {
+    var data = await fetch(linkToJson).then((res) => {
+  return res.json();
+  });
+
+      setProperties(data);
+    console.log(data);
+  }
+    fetchData();
+   }, []);
 */
+
+  //<Property value={properties}></Property>
+  // <PropertiesProvider>
   return (
-    <div className="App">
-      <Header></Header>
-      <Banner></Banner>
-      <Property></Property>
-    </div>
+    
+      <div className="App">
+        <Header></Header>
+        <Banner></Banner>
+        <PropertiesProvider>
+        <Property></Property>
+    
+        </PropertiesProvider>
+
+        <Footer></Footer>
+      </div>
+ 
   );
 }
 

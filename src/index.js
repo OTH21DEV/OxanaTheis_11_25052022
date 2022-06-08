@@ -5,18 +5,24 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/index.css";
 import Home from "./pages/Home/index";
 import About from "./pages/About/index";
+import PropertyPage from "./pages/Property/index";
 import Error from "./components/Error/index";
 import reportWebVitals from "./reportWebVitals";
+
+//import allProperties from "../../components/useContext/propertiesArray";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+    
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/property/:id" element={<PropertyPage />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
+    
     </Router>
   </React.StrictMode>
 );
