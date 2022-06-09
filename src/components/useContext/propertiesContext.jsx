@@ -8,7 +8,7 @@ export const PropertiesProvider = (props) => {
 
  // useEffect(() => {
     async function fetchData() {
-      var data = await fetch(linkToJson).then((res) => {
+      let data = await fetch(linkToJson).then((res) => {
         return res.json();
       });
       //console.log(data);

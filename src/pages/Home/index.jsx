@@ -2,10 +2,8 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Property from "../../components/Property";
-//import allProperties from "../../components/useContext/propertiesArray";
-
-//
 import Footer from "../../components/Footer";
+
 //import React, { useEffect, useState } from "react";
 
 //test
@@ -33,18 +31,15 @@ useEffect(() => {
   //<Property value={properties}></Property>
   // <PropertiesProvider>
   return (
-    
-      <div className="App">
-        <Header></Header>
-        <Banner></Banner>
-        <PropertiesProvider>
+    <div className="App">
+      <Header></Header>
+      <Banner></Banner>
+      <PropertiesProvider>
         <Property></Property>
-    
-        </PropertiesProvider>
+      </PropertiesProvider>
 
-        <Footer></Footer>
-      </div>
- 
+      <Footer></Footer>
+    </div>
   );
 }
 

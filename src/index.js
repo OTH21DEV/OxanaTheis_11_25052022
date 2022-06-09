@@ -8,22 +8,23 @@ import About from "./pages/About/index";
 import PropertyPage from "./pages/Property/index";
 import Error from "./components/Error/index";
 import reportWebVitals from "./reportWebVitals";
+//import { PropertiesProvider } from "../../components/useContext/propertiesContext";
 
-//import allProperties from "../../components/useContext/propertiesArray";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+   {/*<PropertiesProvider>*/}
     <Router>
-    
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/property/:id" element={<PropertyPage />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
-    
     </Router>
+     {/* </PropertiesProvider>*/}
   </React.StrictMode>
 );
 
