@@ -1,35 +1,18 @@
-//import "../../styles/Property.css";
-
-import { PropertiesContext } from "../useContext/propertiesContext";
-import React, { useContext} from "react";
-import{useParams} from "react-router-dom"
-
-function Tag() {
-    const {id} = useParams();
- 
-    //test de useContext
- const [properties,setProperties] = useContext(PropertiesContext)
-
- 
- console.log(id)
- console.log(properties)
+import "../../styles/Tag.css";
 
 
- const selectedProperty = properties.find(property => {
-    return property.id === id;
-  });
-
-console.log(selectedProperty)
+function Tag(props) {
+  console.log(props.tags);
+  /*
+let tag =[];
+for(let i=0; i<props.tags.length; i++){
+  tag.push(props.tags[i])
+}*/
   return (
-    
-   <div>
-  
-        <div>
+    <div className="property-tags">
 
-          <h3>{/*selectedProperty.title*/}</h3>
-        </div>
 
-     
+<p>{props.tags}</p>
     </div>
   );
 }

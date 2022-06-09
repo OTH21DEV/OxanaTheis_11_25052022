@@ -2,14 +2,14 @@ import "../../styles/Property.css";
 import { Link } from "react-router-dom";
 
 
-import { PropertiesContext } from "../useContext/propertiesContext";
-import React, { useContext} from "react";
+//import { PropertiesContext } from "../useContext/propertiesContext";
+//import React, { useContext} from "react";
 
 
-function Property() {
+function Property(props) {
   //test de useContext
 
-  const [properties,setProperties] = useContext(PropertiesContext)
+  //const [properties,setProperties] = useContext(PropertiesContext)
 
 
 //............................
@@ -52,7 +52,7 @@ function Property() {
 
   return (
     <div>
-      {properties.map((property) => (
+      {props.value.map((property) => (
         <div className="property">
           <Link to={`/property/${property.id}`}>
             <img className="property__img" src={property.cover} key={property.id} alt="" />

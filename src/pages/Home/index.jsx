@@ -4,13 +4,13 @@ import Banner from "../../components/Banner";
 import Property from "../../components/Property";
 import Footer from "../../components/Footer";
 
-//import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 //test
-import { PropertiesProvider } from "../../components/useContext/propertiesContext";
+//import { PropertiesProvider } from "../../components/useContext/propertiesContext";
 
 function Home() {
-  /*
+  
  const linkToJson = "data/logements.json";
 
  const [properties, setProperties] = useState([]);
@@ -26,7 +26,7 @@ useEffect(() => {
   }
     fetchData();
    }, []);
-*/
+
 
   //<Property value={properties}></Property>
   // <PropertiesProvider>
@@ -34,9 +34,9 @@ useEffect(() => {
     <div className="App">
       <Header></Header>
       <Banner></Banner>
-      <PropertiesProvider>
-        <Property></Property>
-      </PropertiesProvider>
+    
+        <Property value={properties}></Property>
+    
 
       <Footer></Footer>
     </div>
