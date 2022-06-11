@@ -2,9 +2,10 @@
 import Header from "../../components/Header";
 import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag";
+import Raiting from "../../components/Raiting";
 import Footer from "../../components/Footer";
 import getDataApi from "../../services/api";
-
+import "../../styles/PropertyPage.css";
 
 //Version avec fetch _probleme d'usage objet retourné-selectedProperty
 /*
@@ -58,7 +59,12 @@ const property = propertyData.getProperty(id);
   return (
     <div>
       <Header></Header>
+      <section className="property-heading">
+      <h1>{property.title}</h1>
+      <h2>{property.location}</h2>
+      </section>
       <Tag value={property.tags}></Tag>
+      <Raiting value ={property.rating}></Raiting>
       <Footer></Footer>
     </div>
   );

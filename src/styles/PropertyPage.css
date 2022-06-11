@@ -1,0 +1,11 @@
+.property-heading > h1 {
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.property-heading > h2 {
+  font-size: 1em;
+  text-align: left;
+  font-weight: 500;
+  margin: 0;
+}
