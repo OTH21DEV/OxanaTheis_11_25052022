@@ -1,16 +1,21 @@
+//import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import { useParams } from "react-router-dom";
-//import React, { useContext,useEffect, useState } from "react";
 import Tag from "../../components/Tag";
 import Footer from "../../components/Footer";
-import React, { useEffect, useState } from "react";
-//import { PropertiesProvider } from "../../components/useContext/propertiesContext";
+import getDataApi from "../../services/api";
 
+
+//Version avec fetch _probleme d'usage objet retourné-selectedProperty
+/*
 function PropertyPage() {
+  
   const linkToJson = "../data/logements.json";
-
+  const { id } = useParams();
   const [properties, setProperties] = useState([]);
 
+  
+  
   useEffect(() => {
     async function fetchData() {
       let data = await fetch(linkToJson).then((res) => {
@@ -18,24 +23,42 @@ function PropertyPage() {
       });
 
       setProperties(data);
+   
       console.log(data);
     }
     fetchData();
   }, []);
 
-  const { id } = useParams();
-  const selectedProperty = properties.find((property) => {
+  let selectedProperty = properties.find((property) => {
     return property.id === id;
   });
-  console.log(id);
-  console.log(selectedProperty);
+  
 
   return (
     <div>
       <Header></Header>
 
-      <Tag {...selectedProperty}></Tag>
+      <Tag value={property.tags}></Tag>
 
+      <Footer></Footer>
+    </div>
+  );
+
+  }
+*/
+
+
+// V2
+function PropertyPage() {
+  
+const propertyData = new getDataApi();
+const { id } = useParams();
+const property = propertyData.getProperty(id);
+
+  return (
+    <div>
+      <Header></Header>
+      <Tag value={property.tags}></Tag>
       <Footer></Footer>
     </div>
   );

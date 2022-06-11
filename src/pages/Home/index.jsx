@@ -1,14 +1,12 @@
-//import React, { useEffect,useState} from "react";
+//import React, { useEffect, useState } from "react";
+
+import getDataApi from "../../services/api";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Property from "../../components/Property";
 import Footer from "../../components/Footer";
 
-import React, { useEffect, useState } from "react";
-
-//test
-//import { PropertiesProvider } from "../../components/useContext/propertiesContext";
-
+/*Verion avec fetch
 function Home() {
   
  const linkToJson = "data/logements.json";
@@ -17,30 +15,40 @@ function Home() {
 
 useEffect(() => {
   async function fetchData() {
-    var data = await fetch(linkToJson).then((res) => {
+    let data = await fetch(linkToJson).then((res) => {
   return res.json();
   });
 
       setProperties(data);
-    console.log(data);
+  //  console.log(data);
   }
     fetchData();
    }, []);
 
-
-  //<Property value={properties}></Property>
-  // <PropertiesProvider>
   return (
     <div className="App">
       <Header></Header>
       <Banner></Banner>
-    
         <Property value={properties}></Property>
-    
-
       <Footer></Footer>
     </div>
   );
 }
 
+export default Home;
+*/
+
+function Home() {
+  const data = new getDataApi();
+  const properties = data.getProperties();
+
+  return (
+    <div className="App">
+      <Header></Header>
+      <Banner></Banner>
+      <Property value={properties}></Property>
+      <Footer></Footer>
+    </div>
+  );
+}
 export default Home;

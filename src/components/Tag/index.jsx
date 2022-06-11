@@ -1,19 +1,14 @@
 import "../../styles/Tag.css";
 
-
-function Tag(props) {
-  console.log(props.tags);
-  /*
-let tag =[];
-for(let i=0; i<props.tags.length; i++){
-  tag.push(props.tags[i])
-}*/
+const Tag = (props) => {
   return (
+    <div>
     <div className="property-tags">
-
-
-<p>{props.tags}</p>
+      {props.value.map((tag) => (
+        <h3>{tag}</h3>
+      ))}
+      </div>
     </div>
   );
-}
+};
 export default Tag;
