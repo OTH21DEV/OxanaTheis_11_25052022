@@ -1,0 +1,21 @@
+.property-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property-host > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.property-host > h3{
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: end;
+    width:50%;
+
+}

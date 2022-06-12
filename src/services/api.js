@@ -12,5 +12,5 @@ import data from '../data/logements.json'
       return  data.find(selectedProperty => selectedProperty.id === id);
    }
    //Récuperer les données de la page apropos sous format json.
- 
+
 }

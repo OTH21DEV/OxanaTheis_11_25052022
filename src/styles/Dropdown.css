@@ -33,6 +33,7 @@
   visibility: hidden;
   width: 100%;
   text-align: justify;
+  font-size: 0.9em;
 }
 .dropdown-texte--onclick {
   visibility: visible;

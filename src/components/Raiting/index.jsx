@@ -12,8 +12,8 @@ console.log(rate)
 
 return (
     <div>
-  {rate.map((value) => (
-       <img src= {value === true ? starFull : starEmpty} alt =""/>
+  {rate.map((value,index) => (
+       <img src= {value === true ? starFull : starEmpty} key={index} alt =""/>
       ))}
     </div>
   );
