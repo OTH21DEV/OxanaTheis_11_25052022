@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image {
+  border-radius: 10px;
+  width: 345px;
+  height: 255px;
+  object-fit: cover;
+}
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+.slider__arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 2s;
+}
+.slide-active {
+  opacity: 1;
+  transition-duration: 2s;
+  transform: scale(1.01);
+}

@@ -54,16 +54,15 @@ function PropertyPage() {
 
 // V2
 function PropertyPage() {
-  
   const propertyData = new getDataApi();
   const { id } = useParams();
   const property = propertyData.getProperty(id);
- 
 
-console.log(property.pictures)
+  console.log(property.pictures);
   return (
     <div>
       <Header></Header>
+      <Slider value={property.pictures}></Slider>
       <section className="property-heading">
         <h1>{property.title}</h1>
         <h2>{property.location}</h2>
