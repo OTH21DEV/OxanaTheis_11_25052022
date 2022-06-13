@@ -51,7 +51,8 @@ function Property(props) {
   */
 
   return (
-    <div>
+    <section className="properties">
+      <div className="property-wrapper">
       {props.value.map((property) => (
         <div className="property">
           <Link to={`/property/${property.id}`}>
@@ -61,7 +62,8 @@ function Property(props) {
           <h3 className="property__title">{property.title}</h3>
         </div>
       ))}
-    </div>
+      </div>
+    </section>
   );
 }
 export default Property;

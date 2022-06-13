@@ -15,3 +15,32 @@
   padding-left: 15px;
   padding-bottom: 10px;
 }
+@media all and (min-width: 880px) {
+  .properties {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    height: auto;
+    width: 100%;
+    margin-top:20px;
+  }
+
+  .property {
+    width: 31%;
+    margin-bottom:25px;
+  }
+  .property__img {
+    width: 340px;
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .property-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px;
+  }
+  .property__title {
+    width:55%;
+  }
+}

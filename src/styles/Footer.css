@@ -15,4 +15,17 @@
 .footer > p {
   color: white;
   font-size: 0.8em;
+  padding-top: 15px;
+}
+@media all and (min-width: 880px) {
+  .footer > img {
+    width: 10%;
+  }
+  .footer > p {
+    font-size: 1.3em;
+    padding-top: 25px;
+  }
+  .footer {
+    padding-top: 35px;
+  }
 }

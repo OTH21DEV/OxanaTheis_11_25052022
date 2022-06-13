@@ -1,21 +1,37 @@
 .banner {
   padding: 10px 0;
+  position: relative;
 }
 
 .banner > img {
   width: 100%;
   border-radius: 10px;
- 
+  object-fit: cover;
 }
 
 .banner > h2 {
-    position: absolute;
-    top:11%;
-    color: white;
-    width:50%;
-    font-size: 1.2em;
-    padding-left:15px;
-    font-weight: lighter;
-    text-align: left;
+  position: absolute;
+  top: 11%;
+  color: white;
+  width: 50%;
+  font-size: 1.2em;
+  padding-left: 15px;
+  font-weight: lighter;
+  text-align: left;
 }
-  
+@media all and (min-width: 880px) {
+  .banner > h2 {
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    top: 25%;
+  }
+  .banner > img {
+    height: 223px;
+    border-radius: 25px;
+  }
+  .banner {
+    padding-top: 35px;
+  }
+}
