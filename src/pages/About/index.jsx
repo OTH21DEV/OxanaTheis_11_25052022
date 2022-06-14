@@ -12,7 +12,9 @@ function About() {
   return (
     <div>
       <Header></Header>
+      <div className="image-banner">
       <img src={img} alt="Mountain" className="img" />
+      </div>
       <Dropdown title ="Fiabilité" container ="dropdown-reliability" content = {firstDropdown}></Dropdown>
       <Dropdown title ="Respect" container ="dropdown-respect" content = {secondDropdown}></Dropdown>
       <Dropdown title ="Service"container ="dropdown-service" content = {thirdDropdown}></Dropdown>

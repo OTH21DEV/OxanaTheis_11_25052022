@@ -1,13 +1,17 @@
 body {
   margin: 0;
-  padding:30px 15px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat',
-    sans-serif;
+  padding: 30px 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+@media all and (min-width: 880px) {
+  body {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

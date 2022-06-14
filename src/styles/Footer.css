@@ -27,5 +27,7 @@
   }
   .footer {
     padding-top: 35px;
+    margin-right:-60px;
+    margin-left:-60px;
   }
 }

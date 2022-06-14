@@ -1,17 +1,29 @@
-.property-tags{
-    display :flex;
-    align-items: center;
-    flex-wrap: wrap;
-   
+.property-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.property-tags > h3{
-    background: #FF6060;
-    color:white;
-    padding:5px 20px;
-    border-radius:5px;
-    font-size:0.9em;
-    font-weight: 400;
-    margin-right: 15px;
-    margin-bottom: 0;
- 
+.property-tags > h3 {
+  background: #ff6060;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-right: 15px;
+  margin-bottom: 0;
+  min-width: 84px;
+  text-align: center;
+}
+
+@media all and (min-width: 880px) {
+  .property-tags > h3 {
+    border-radius: 10px;
+    min-width: 115px;
+    padding-top: 5px;
+  }
+  .property-tags-wrapper {
+    display: flex;
+    width: 100%;
+  }
 }

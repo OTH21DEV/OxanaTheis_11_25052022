@@ -76,6 +76,7 @@ function PropertyPage() {
         <Host value={property.host}></Host>
       </section>
       </div>
+      <section className="wrapper-dropdown">
       <Dropdown title="Description" container="dropdown-description" content={property.description}></Dropdown>
       <Dropdown
         title="Equipments"
@@ -84,6 +85,7 @@ function PropertyPage() {
           <h3 className="dropdown-equipments__text">{item}</h3>
         ))}
       ></Dropdown>
+      </section>
       <Footer></Footer>
     </div>
   );

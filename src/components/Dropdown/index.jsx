@@ -20,7 +20,7 @@ function Dropdown(props) {
     }
   }
   return (
-    <div>
+    <div className="dropdown-container">
       <div className={props.container}>
         <h3 className="dropdown-title">{props.title}</h3>
         <img src={arrow_down} alt="Arrow down" className="dropdown-arrow_down" data-open="false" onClick={handleClick} />

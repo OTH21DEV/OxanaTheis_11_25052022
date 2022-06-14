@@ -1,19 +1,28 @@
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:160px 30px;
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 30px;
 }
 .title > h2 {
-    font-size: 4.8em;
-    margin:0;
+  font-size: 4.8em;
+  margin: 0;
 }
-.title > p, h2, .title-link {
-    color:#FF6060;
-    text-align: center;
-    
+.title > p,
+h2,
+.title-link {
+  color: #ff6060;
+  text-align: center;
 }
-.title-link{
-    display: flex;
-    justify-content: center;
+.title-link {
+  display: flex;
+  justify-content: center;
+}
+@media all and (min-width: 880px) {
+  .title > h2 {
+    font-size: 9em;
+  }
+  .title > p {
+    font-size: 1.7em;
+  }
 }
