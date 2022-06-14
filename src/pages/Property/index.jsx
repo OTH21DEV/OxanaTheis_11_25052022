@@ -63,16 +63,19 @@ function PropertyPage() {
     <div>
       <Header></Header>
       <Slider value={property.pictures}></Slider>
+      <div className="wrapper">
       <section className="property-heading">
         <h1>{property.title}</h1>
         <h2>{property.location}</h2>
-      </section>
       <Tag value={property.tags}></Tag>
+      </section>
+
       <section className="property-raiting-host">
         <Raiting value={property.rating}></Raiting>
 
         <Host value={property.host}></Host>
       </section>
+      </div>
       <Dropdown title="Description" container="dropdown-description" content={property.description}></Dropdown>
       <Dropdown
         title="Equipments"

@@ -19,3 +19,8 @@
     width:50%;
 
 }
+@media all and (min-width: 880px) {
+  .property-host {
+    
+  }
+}

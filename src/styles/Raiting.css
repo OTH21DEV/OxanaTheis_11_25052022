@@ -1,0 +1,6 @@
+@media all and (min-width: 880px) {
+  .raiting > img {
+    width: 1.4em;
+    padding-top: 15px;
+  }
+}

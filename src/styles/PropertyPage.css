@@ -35,3 +35,26 @@
   margin:0;
   padding-bottom: 5px;
 }
+
+@media all and (min-width: 880px) {
+  .property-heading > h1{
+    font-size: 2em;
+    margin-bottom:10px;
+  }
+  .property-heading > h2{
+    font-size: 0.8em;
+  }
+  .property-raiting-host {
+    flex-direction: column-reverse;
+    align-items: end;
+    margin:0;
+    justify-content: unset;
+    height:128px;
+  }
+  .wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:20px;
+  }
+}

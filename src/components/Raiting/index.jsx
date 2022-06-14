@@ -1,6 +1,6 @@
 import starEmpty from "../../assets/star_empty.svg";
 import starFull from "../../assets/star_full.svg";
-
+import "../../styles/Raiting.css";
 
 function Raiting(props){
 
@@ -11,7 +11,7 @@ for (let i=1;i<=5;i++){
 console.log(rate)
 
 return (
-    <div>
+    <div className="raiting">
   {rate.map((value,index) => (
        <img src= {value === true ? starFull : starEmpty} key={index} alt =""/>
       ))}
