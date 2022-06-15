@@ -1,15 +1,10 @@
-.image-banner > img {
+.img {
   padding: 10px 0;
   width: 100%;
 }
 
 @media all and (min-width: 880px) {
-  .image-banner {
+  .img {
     width: 100%;
-    border-radius: 10px;
-  }
-  .image-banner > img {
-    height: 223px;
-    object-fit: cover;
   }
 }

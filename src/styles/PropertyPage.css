@@ -60,13 +60,15 @@
     display: flex;
     justify-content: space-between;
   }
-
+/*
   .dropdown-container {
     width: 45%;
-  }
+  }*/
+
   .dropdown-description,
   .dropdown-equipments {
     border-radius: 10px;
+    width:45%;
   }
 
   
