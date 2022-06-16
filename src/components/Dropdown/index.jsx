@@ -1,5 +1,5 @@
 import arrow_down from "../../assets/arrow.svg";
-import "../../styles/Dropdown.css";
+import "../Dropdown/Dropdown.css";
 
 function Dropdown(props) {
   function handleClick() {

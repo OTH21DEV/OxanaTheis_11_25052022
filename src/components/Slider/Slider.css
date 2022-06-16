@@ -36,6 +36,13 @@
   transition-duration: 2s;
   transform: scale(1.01);
 }
+.slider__number{
+position: absolute;
+top:85%;
+left:50%;
+color:white;
+font-weight: 500;
+}
 
 @media all and (min-width: 376px) {
   .slide-active {

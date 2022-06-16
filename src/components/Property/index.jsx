@@ -1,4 +1,4 @@
-import "../../styles/Property.css";
+import "../../components/Property/Property.css";
 import { Link } from "react-router-dom";
 
 //import { PropertiesContext } from "../useContext/propertiesContext";

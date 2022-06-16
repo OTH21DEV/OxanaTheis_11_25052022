@@ -1,4 +1,4 @@
-import "../../styles/Host.css";
+import "../../components/Host/Host.css";
 
 function Host(props){
 

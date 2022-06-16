@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../styles/Header.css";
+import "../../components/Header/Header.css";
 import logo from "../../assets/logo.png";
 import { useState, useEffect } from "react";
 

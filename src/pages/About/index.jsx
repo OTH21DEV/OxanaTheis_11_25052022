@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Dropdown from "../../components/Dropdown";
 import Footer from "../../components/Footer";
+
 import img_xl from "../../assets/image_xl.png";
 import img_xs from "../../assets/image_xs.png";
 import "../../styles/About.css";
