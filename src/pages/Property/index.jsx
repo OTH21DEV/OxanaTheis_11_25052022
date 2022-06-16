@@ -58,7 +58,6 @@ function PropertyPage() {
   const { id } = useParams();
   const property = propertyData.getProperty(id);
 
-  console.log(property.pictures);
   return (
     <div>
       <Header></Header>
@@ -81,8 +80,8 @@ function PropertyPage() {
       <Dropdown
         title="Equipments"
         container="dropdown-equipments"
-        content={property.equipments.map((item) => (
-          <h3 className="dropdown-equipments__text">{item}</h3>
+        content={property.equipments.map((item,index) => (
+          <h3 className="dropdown-equipments__text" key={index}>{item}</h3>
         ))}
       ></Dropdown>
       </section>

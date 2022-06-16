@@ -1,19 +1,16 @@
 import "../../styles/Property.css";
 import { Link } from "react-router-dom";
 
-
 //import { PropertiesContext } from "../useContext/propertiesContext";
 //import React, { useContext} from "react";
-
 
 function Property(props) {
   //test de useContext
 
   //const [properties,setProperties] = useContext(PropertiesContext)
 
-
-//............................
-//test appel de useEffect ici 
+  //............................
+  //test appel de useEffect ici
   /*
   
   const linkToJson = "data/logements.json";
@@ -53,15 +50,16 @@ function Property(props) {
   return (
     <section className="properties">
       <div className="property-wrapper">
-      {props.value.map((property) => (
-        <div className="property">
-          <Link to={`/property/${property.id}`}>
-            <img className="property__img" src={property.cover} key={property.id} alt="" />
-          </Link>
-
-          <h3 className="property__title">{property.title}</h3>
-        </div>
-      ))}
+        {props.value.map((property, index) => (
+          <div className="property" key={index}>
+            <Link to={`/property/${property.id}`}>
+              <img className="property__img" src={property.cover} key={index} alt="" />
+            </Link>
+            <h3 className="property__title" key={index}>
+              {property.title}
+            </h3>
+          </div>
+        ))}
       </div>
     </section>
   );

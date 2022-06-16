@@ -19,15 +19,13 @@ function Dropdown(props) {
       container.classList.remove("dropdown-container--onclick");
     }
   }
-  //   <div className="dropdown-container">
+
   return (
-  
-      <div className={props.container}>
-        <h3 className="dropdown-title">{props.title}</h3>
-        <img src={arrow_down} alt="Arrow down" className="dropdown-arrow_down" data-open="false" onClick={handleClick} />
-        <p className="dropdown-texte">{props.content}</p>
-      </div>
-    
+    <div className={props.container}>
+      <h3 className="dropdown-title">{props.title}</h3>
+      <img src={arrow_down} alt="Arrow down" className="dropdown-arrow_down" data-open="false" onClick={handleClick} />
+      <div className="dropdown-texte">{props.content}</div>
+    </div>
   );
 }
 

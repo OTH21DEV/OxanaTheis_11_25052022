@@ -6,7 +6,7 @@ import "../../styles/Slider.css";
 function Slider(props) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const length = props.value.length;
-
+  
   const nextSlide = () => {
     setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
   };
@@ -15,10 +15,10 @@ function Slider(props) {
     setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
   };
 
-
   return (
     <section className="slider">
-      <img src={arrow_left} className="slider__arrow-left" alt="" onClick={prevSlide} />
+      {length > 1 && <img src={arrow_left} className="slider__arrow-left" alt="" onClick={prevSlide} />}
+
       {props.value.map((slide, index) => {
         return (
           <div className={index === currentSlide ? "slide-active" : "slide"} key={index}>
@@ -26,7 +26,7 @@ function Slider(props) {
           </div>
         );
       })}
-      <img src={arrow_right} className="slider__arrow-right" alt="" onClick={nextSlide} />
+      {length > 1 && <img src={arrow_right} className="slider__arrow-right" alt="" onClick={nextSlide} />}
     </section>
   );
 }
