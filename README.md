@@ -3,7 +3,7 @@
 
 # KASA - web development using React and React Router
 
-The Kasa site was coded more than 10 years ago in ASP.NET with significant legacy code. The goal is to move to a full stack in JavaScript with NodeJS on the Back-end side, and React on the Front-end side.
+The Kasa site was coded more than 10 years ago in ASP.NET. The goal is to move to a full stack in JavaScript with NodeJS on the Back-end side, and React on the Front-end side.
 
 
 
