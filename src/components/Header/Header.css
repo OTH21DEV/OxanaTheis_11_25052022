@@ -12,10 +12,17 @@
   width: 220px;
   justify-content: space-between;
 }
-.nav-links > a {
+
+.nav-links__underline {
   color: #ff6060;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #ff6060;
 }
+.nav-links__without-underline{
+  text-decoration: none;
+  color: #ff6060;
+}
+
 @media all and (min-width: 880px) {
   .nav-logo {
     width: 75%;
