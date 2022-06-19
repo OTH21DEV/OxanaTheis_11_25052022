@@ -21,8 +21,8 @@ https://kasa-oxanatheis.netlify.app/
 
 ## Local installation
 
-- git clone 
-- cd 
+- git clone https://github.com/OTH21DEV/OxanaTheis_11_25052022.git
+- cd OxanaTheis_11_25052022
 - npm install
 
 ## Launch locally
