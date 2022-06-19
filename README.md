@@ -37,7 +37,6 @@ https://kasa-oxanatheis.netlify.app/
 
 - HTML
 - CSS
-- Sass
 - Javascript
 - React
 
