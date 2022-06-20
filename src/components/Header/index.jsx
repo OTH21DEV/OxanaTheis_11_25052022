@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../components/Header/Header.css";
 import logo from "../../assets/logo.png";
 import { useState, useEffect } from "react";
@@ -10,21 +10,7 @@ function Header() {
     window.matchMedia("(min-width: 880px)").addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
-  const location = useLocation();
-
-  useEffect(() => {
-    let linkAbout = document.querySelector(".nav-links__about");
-    let linkHome = document.querySelector(".nav-links__home");
-    if (location.pathname === "/") {
-      linkHome.classList.add("nav-links__underline");
-      linkAbout.classList.add("nav-links__without-underline");
-    }
-    if (location.pathname === "/about") {
-      linkAbout.classList.add("nav-links__underline");
-      linkHome.classList.remove("nav-links__underline");
-      linkHome.classList.add("nav-links__without-underline");
-    }
-  }, [location]);
+//activeClassName props- use to identify the route is currently being visited.
 
   return (
     <div className="nav">
@@ -34,24 +20,24 @@ function Header() {
 
       <div className="nav-links">
         {matches && (
-          <Link className="nav-links__home" to="/">
+          <NavLink className="nav-links__home" exact activeClassName="active" to="/">
             Accueil
-          </Link>
+          </NavLink>
         )}
         {!matches && (
-          <Link className="nav-links__home" to="/">
+          <NavLink className="nav-links__home" exact activeClassName="active" to="/">
             ACCUEIL
-          </Link>
+          </NavLink>
         )}
         {matches && (
-          <Link className="nav-links__about" to="/about">
+          <NavLink className="nav-links__about" exact activeClassName="active" to="/about">
             A Propos
-          </Link>
+          </NavLink>
         )}
         {!matches && (
-          <Link className="nav-links__about" to="/about">
+          <NavLink className="nav-links__about" exact activeClassName="active" to="/about">
             A PROPOS
-          </Link>
+          </NavLink>
         )}
       </div>
     </div>

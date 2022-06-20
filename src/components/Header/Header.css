@@ -13,16 +13,15 @@
   justify-content: space-between;
 }
 
-.nav-links__underline {
+.nav-links__home,
+.nav-links__about {
   color: #ff6060;
-  text-decoration: underline;
-  text-decoration-color: #ff6060;
-}
-.nav-links__without-underline{
   text-decoration: none;
-  color: #ff6060;
 }
 
+.active {
+  border-bottom: 2px solid #ff6060;
+}
 @media all and (min-width: 880px) {
   .nav-logo {
     width: 75%;
