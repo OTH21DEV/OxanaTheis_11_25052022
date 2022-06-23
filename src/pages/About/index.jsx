@@ -22,7 +22,7 @@ function About() {
   }, []);
 
   return (
-    <div>
+    <div className="test">
       <Header></Header>
 
       {matches && <img src={img_xl} alt="Mountain" className="img" />}

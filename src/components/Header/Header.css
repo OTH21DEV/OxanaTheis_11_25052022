@@ -21,6 +21,8 @@
 
 .active {
   border-bottom: 2px solid #ff6060;
+  color: #ff6060;
+  text-decoration: none;
 }
 @media all and (min-width: 880px) {
   .nav-logo {

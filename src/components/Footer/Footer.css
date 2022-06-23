@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: center;
   margin: 160px -15px -30px -15px;
+ /*position: absolute;*/
+ /* width:100%;*/
+ /* bottom:0;*/
+
 }
 
 .footer > img {
@@ -17,6 +21,7 @@
   font-size: 0.8em;
   padding-top: 15px;
 }
+
 @media all and (min-width: 880px) {
   .footer > img {
     width: 10%;

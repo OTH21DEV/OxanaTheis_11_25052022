@@ -10,7 +10,7 @@ function Header() {
     window.matchMedia("(min-width: 880px)").addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
-//activeClassName props- use to identify the route is currently being visited.
+//NavLink - use to identify the route is currently being visited.
 
   return (
     <div className="nav">
@@ -20,22 +20,22 @@ function Header() {
 
       <div className="nav-links">
         {matches && (
-          <NavLink className="nav-links__home" exact activeClassName="active" to="/">
+          <NavLink className= {({ isActive }) => isActive? "active": 'nav-links__home'} to="/">
             Accueil
           </NavLink>
         )}
         {!matches && (
-          <NavLink className="nav-links__home" exact activeClassName="active" to="/">
+          <NavLink  className= {({ isActive }) => isActive? "active": 'nav-links__home'} to="/">
             ACCUEIL
           </NavLink>
         )}
         {matches && (
-          <NavLink className="nav-links__about" exact activeClassName="active" to="/about">
+          <NavLink className= {({ isActive }) => isActive? "active": 'nav-links__about'} to="/about">
             A Propos
           </NavLink>
         )}
         {!matches && (
-          <NavLink className="nav-links__about" exact activeClassName="active" to="/about">
+          <NavLink className={({ isActive }) => isActive? "active": 'nav-links__about'} to="/about">
             A PROPOS
           </NavLink>
         )}

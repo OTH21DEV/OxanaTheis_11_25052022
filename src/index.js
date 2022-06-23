@@ -1,4 +1,3 @@
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,14 +7,10 @@ import About from "./pages/About/index";
 import PropertyPage from "./pages/Property/index";
 import Error from "./components/Error/index";
 import reportWebVitals from "./reportWebVitals";
-//import { PropertiesProvider } from "../../components/useContext/propertiesContext";
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   {/*<PropertiesProvider>*/}
     <Router>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -24,7 +19,6 @@ root.render(
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </Router>
-     {/* </PropertiesProvider>*/}
   </React.StrictMode>
 );
 

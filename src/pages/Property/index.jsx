@@ -1,4 +1,3 @@
-//import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import Slider from "../../components/Slider";
@@ -12,48 +11,7 @@ import getDataApi from "../../services/api";
 import "../../styles/PropertyPage.css";
 import "../../components/Dropdown/Dropdown.css";
 
-//Version avec fetch _probleme d'usage objet retourné-selectedProperty
-/*
-function PropertyPage() {
-  
-  const linkToJson = "../data/logements.json";
-  const { id } = useParams();
-  const [properties, setProperties] = useState([]);
 
-  
-  
-  useEffect(() => {
-    async function fetchData() {
-      let data = await fetch(linkToJson).then((res) => {
-        return res.json();
-      });
-
-      setProperties(data);
-   
-      console.log(data);
-    }
-    fetchData();
-  }, []);
-
-  let selectedProperty = properties.find((property) => {
-    return property.id === id;
-  });
-  
-
-  return (
-    <div>
-      <Header></Header>
-
-      <Tag value={property.tags}></Tag>
-
-      <Footer></Footer>
-    </div>
-  );
-
-  }
-*/
-
-// V2
 function PropertyPage() {
   const propertyData = new getDataApi();
   const { id } = useParams();

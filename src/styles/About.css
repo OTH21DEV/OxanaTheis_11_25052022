@@ -3,6 +3,9 @@
   width: 100%;
 }
 
+.testt{
+  min-height: 400px;
+}
 @media all and (min-width: 880px) {
   .img {
     width: 100%;
