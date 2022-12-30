@@ -1,4 +1,3 @@
-
 ![kasa-min](https://user-images.githubusercontent.com/81259062/210060983-8abfa074-3423-4b26-9f57-e1c7996dad5a.png)
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
@@ -50,4 +49,4 @@ https://kasa-oxanatheis.netlify.app/
 - Netlify.app : server for uploading the React application
 
 
-https://user-images.githubusercontent.com/81259062/210060983-8abfa074-3423-4b26-9f57-e1c7996dad5a.png
+
