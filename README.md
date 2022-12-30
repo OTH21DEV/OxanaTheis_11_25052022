@@ -47,3 +47,5 @@ https://kasa-oxanatheis.netlify.app/
 - ESLint
 - Prettier
 - Netlify.app : server for uploading the React application
+
+![kasa-min](https://user-images.githubusercontent.com/81259062/210060983-8abfa074-3423-4b26-9f57-e1c7996dad5a.png)
